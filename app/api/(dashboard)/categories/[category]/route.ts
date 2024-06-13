@@ -110,6 +110,6 @@ export const DELETE = async (request: Request, context: { params: any }) => {
     } catch (err: any) {
         return new NextResponse("Error in deleting category" + err.message,
             { status: 500 }
-        )
+        );
     }
-}
+};
